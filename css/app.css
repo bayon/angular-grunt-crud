@@ -1,0 +1,193 @@
+
+body{
+	text-shadow:none !important;
+	letter-spacing:.8px  !important;
+	font-weight:normal !important;
+}
+
+.transpBlack75{
+	background-image:url('../img/transparency/transpBlack75.png');
+}
+.add-span{
+	color:blue;
+	font-weight:bold;
+}
+.edit-span{
+	color:orange;
+}
+.save-span{
+	color:green;
+}
+.delete-span{
+	color:red;
+}
+ /*.navbar{
+ background-image:url('../img/transparency/transpBlack25.png');
+	background-size:cover;	
+ }*/
+
+/*slidebar overrides--------------------*/
+
+
+[off-canvas] {
+
+	/* background-color: red; Basic background color, overwrite this in your own css. */
+	background-image:url('../img/160826-mid-banner-b.jpg');
+	background-size:cover;
+	
+}
+[canvas=container] {
+	 background-image:url('http://www.parkseed.com/images/l/v1982.jpg');
+	 background-size:cover;
+	 box-shadow: -5px 0px 10px #000;
+	  
+	
+}
+
+/*---------------------------------------*/
+
+.ui-collapsible-heading ,.ui-collapsible-heading-collpased{
+	background-color:none !important;
+	background-image:url('../img/transparency/transpBlack25.png') ;
+}
+section a{
+	background-color:none !important;
+	background:none !important;
+	/*background-image:url('../img/transparency/transpBlue10.png') ;*/
+	text-shadow:none !important;
+	border:none !important;
+	color:#fff !important;
+	font-weight:normal !important;
+	text-decoration:none !important;
+}
+/*
+section .ui-field-contain, .ui-field-contain input{
+	background-color:none !important;
+	background-image:url('../img/transparency/transpBlack25.png') ;
+	text-shadow:none !important; font-weight: normal !important;
+	 
+}
+*/
+.ui-control-group{
+	 text-shadow:none !important; font-weight: normal !important;
+}
+.ui-input-text {
+    border: none !important;
+    border-color: transparent !important;
+    background-color:none !important;
+    background:none !important;
+}
+.ui-button, .ui-button input{
+	 border: none !important;
+    border-color: transparent !important;
+    background-color:none !important;
+    background:none !important;
+}
+.ui-checkbox, .ui-checkbox-input, .ui-slider-switch, .ui-slider-label, .ui-radio, .ui-li{
+	 border: none !important;
+    border-color: transparent !important;
+    background-color:none !important;
+    background:none !important;
+}
+.ui-radio label{ color:red !important;}
+.ui-radio{background-color:blue !important;}
+.ui-slider-switch{
+	background-image:url('../img/transparency/transpBlack75.png') ;
+}
+/* unvisited link */
+a:link {
+}
+
+/* visited link */
+a:visited {
+}
+
+/* mouse over link */
+a, a:hover,a:link,a:active,a:visited,li, li:hover{
+	background:none;
+	background-image:none;
+}
+section a:hover {
+     background-image:url('../img/transparency/transpBlack50.png') !important;
+}
+section li:hover{
+	background-image:url('../img/transparency/transpBlack50.png') !important;
+}
+/* selected link */
+a:active {
+}
+input{
+	color:#fff !important;
+	background:none !important;
+	background-color:none;
+	border:solid 1px #777 !important;
+	}
+	
+.ui-editable-flex div{
+	color:#fff  !important;
+	background:none !important;
+	background-color:none;
+	border:none !important;
+	
+}
+.ui-slider-handle{
+	background-image:url('../img/transparency/transpBlack75.png') ;
+}
+.ui-radio{
+	
+}
+	
+button,a,li,.ui-editable-flex div,input,.ui-label {text-shadow:none !important; font-weight: normal !important;}
+section button{
+	text-shadow:none !important;
+	background-color:none !important;
+	background:none !important;
+	 
+	/*border:none !important;*/
+	border:solid 1px #333 !important;
+	color:#fff !important;
+	background-image:url('../img/transparency/transpBlack25.png') ;
+	
+}
+
+section li{
+	text-shadow:none !important;
+	background-color:none !important;
+	background:none !important;
+	background-image:url('../img/transparency/transpBlack25.png')  !important;
+	border:none !important;
+	border-bottom:none !important;
+	border-top:none !important;
+	color:#fff  !important;
+	letter-spacing:1px  !important;
+	
+}
+
+/*
+.ui-listview{
+	  http://i.parkseed.com/images/art/ps_desktop_logo_ss15.png
+	background-color:none !important;
+	background:none !important;
+	background-image:url('../img/transparency/transpBlack10.png') ;
+}*/
+.ui-collapsible-content{
+	  
+	background-color:none !important;
+	background:none !important;
+	border:none !important;
+	background-image:url('../img/transparency/transpBlack10.png') ;
+}
+/*------------------DESKTOP----------------*/
+
+@media screen and (max-width: 1920px) {
+}
+
+/*------------------TABLET----------------*/
+@media screen and (max-width: 1024px) {
+	 
+}
+
+/*------------------iPhone----------------*/
+@media screen and (max-width: 480px) {
+	 
+}
