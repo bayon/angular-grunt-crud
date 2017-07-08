@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+	<!--
+	editablelistview/
+
+	-->
+	<head>
+		<meta charset="utf-8">
+		<title>Slidebars Dev Page</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		
+		
+		<script src="js/jquery.min.js"></script>	
+		
+		 <script src="bootstrap/bootstrap.min.js"></script>
+ 
+		<link rel="stylesheet" href="slidebars/slidebars.css">
+		<link rel="stylesheet" href="slidebars/style.css">
+
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.css" />
+		
+		<link rel="stylesheet" href="editablelistview/css/editable-listview.css">
+		<!-- <link rel="stylesheet" href="editablelistview/demo.css"> -->
+		<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		
+		
+		<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+		<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.js"></script>-->
+		<script src = "js/jquery.mobile-1.4.5.min.js"></script>
+		<!-- <script src="editablelistview/js/collapsible-patched.js"></script> -->
+		<script src="editablelistview/js/editable-listview.js"></script>
+
+	</head>
+
+	<body>
+		
+		<div canvas="container">
+			<div class="container-fluid">
+				<div class="row">
+					<nav class="navbar navbar-default navbar-inverse  navbar-fixed-top" role="navigation">
+						<div class="navbar-header">
+		
+							<button type="button" class="navbar-toggle navbar-inverse " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="width:44px;max-width:44px !important;">
+								<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+							</button>
+							<button type="button" class="navbar-toggle navbar-inverse js-toggle-left-slidebar" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="width:44px;max-width:44px !important;">
+								<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" style="color:#fff;text-shadow:none;margin-top:-15px;" href="#"><img src=" http://i.parkseed.com/images/art/ps_desktop_logo_ss15.png" width=150px; height=50px; /></a>
+							<!--<button class="js-toggle-left-slidebar" style="width:40px;max-width:40px !important;">
+									o
+							</button>-->
+						</div>
+		
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">Bootstrap</a>
+										</li>
+										<li>
+											<a href="#">JQuery Plugins</a>
+										</li>
+										<li>
+											<a href="#">HTML5 video</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="#">Checkout</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+		
+					</nav>
+				</div>
+			</div><!-- end container-fluid -->
+			<style>
+.input-group-addon{background:none;background-color:none;border:none;
+background-image:url('img/transparency/transpBlack25.png');
+text-shadow:none !important;
+}
+			</style>
+			 
+			<div class='content' style='margin-top:50px;height:600px;min-height:600px;'>
+				<!-- ajax in content -->
+
+
+
+
+
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+</div>
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+  <span class="input-group-addon" id="basic-addon2">@example.com</span>
+</div>
+
+<div class="input-group">
+  <span class="input-group-addon">$</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-addon">.00</span>
+</div>
+
+<label for="basic-url">Your vanity URL</label>
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+				<section>
+					<div style="padding: 5px;">							 
+						<ul id="list" data-role="listview" data-item-name="flowerName">
+							<li>
+								Hidden Dragon Zinnia Seeds
+							</li>
+							<li>
+								Crouching Tiger Zinnia Seeds
+							</li>
+							<li>
+								Charisma Blue
+							</li>
+							<li>
+								Charisma White
+							</li>
+						</ul>
+					</div>
+					<script>
+						var $list = $("#list").listview({
+							editable : true,
+							//            editableType: "simple",
+							//            collapsed: false,
+							title : "Flowers",
+							emptyTitle : "No FLowers"
+						});					 
+					</script>
+				</section>
+				
+				<section>
+					<div style="padding: 5px;">							 
+						<ul id="list2" data-role="listview" data-item-name="fruitName">
+							<li>
+								Sunshine Blue Dwarf Blueberry
+							</li>
+							<li>
+								Ambrosia Hybrid Cantaloupe 
+							</li>
+							<li>
+								Portabella Mushroom
+							</li>
+							<li>
+								Kieffer Lime Tree
+							</li>
+						</ul>
+					</div>
+					<script>
+						var $list = $("#list2").listview({
+							editable : true,
+							//            editableType: "simple",
+							//            collapsed: false,
+							title : "Fruits",
+							emptyTitle : "No Fruits"
+						});					 
+					</script>
+				</section>
+				 
+			</div>
+
+		</div>
+		
+		<div off-canvas="slidebar-1 left reveal" class="reveal-panel" style="height:600px;min-height:600px;">
+			 
+			 
+			<section>
+					<div style="padding: 5px;">							 
+						<ul id="list3" data-role="listview" data-item-name="shippingName">
+							<li>
+								Overnight
+							</li>
+							<li>
+								UPS 
+							</li>
+							<li>
+								US Mail
+							</li>
+							 
+						</ul>
+					</div>
+
+					<script>
+						var $list = $("#list3").listview({
+							editable : true,
+							//            editableType: "simple",
+							//            collapsed: false,
+							title : "Shipping",
+							emptyTitle : "No Shipping"
+						});					 
+					</script>
+					
+				</section>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="slidebars/slidebars.js"></script>
+		<script src="slidebars/scripts.js"></script>
+		<!-- // GESTURE RECOGNITION ON MOBILE DEVICES -->
+		<script src="js/hammer.js"></script>
+		<script src="js/fastclick.js"></script>
+		<script>
+			$(function() {
+				FastClick.attach(document.body);
+			});
+		</script>
+		<!-- // GESTURE ADDITIONS -->
+	</body>
+</html>

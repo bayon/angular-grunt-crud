@@ -1,0 +1,38 @@
+/* Styles go here */
+body{
+  margin:10px;
+  font-size:14px;
+  font-family:Arial;
+}
+table{
+  border:1px solid #333;
+  border-collapse:collapse;
+  width:99%;
+  max-width:99%;
+  margin:.5%;
+}
+table tr td{
+  border:1px solid #333;
+  padding:10px;
+  color:#eee;
+  width:33%;
+  max-width:33%;
+  background-image:url('../img/transparency/transpBlack75.png');
+}
+table tr td span{
+  cursor:pointer;
+}
+input{
+	 width:100%;
+  max-width:100%;
+
+}
+ .img-filter-blur{
+        filter: blur(5px);
+      /* Browser Specific*/
+      -webkit-filter: blur(5px);
+      -moz-filter: blur(5px);
+      -o-filter: blur(5px);
+      -ms-filter: blur(5px);
+      /*blur,brightness,saturation,hue-rotate,contrast, invert,grayscale,sepia*/
+     }
